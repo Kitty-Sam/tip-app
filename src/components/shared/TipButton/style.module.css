@@ -1,0 +1,16 @@
+.tipBtn {
+    margin: 5px;
+    padding: 8px 0;
+    width: 80px;
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tipBtn:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}

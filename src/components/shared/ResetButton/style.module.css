@@ -1,0 +1,13 @@
+.resetBtn {
+    width: 80%;
+    background-color: var(--grayish-cyan);
+    margin: 250px 5px 5px;
+    padding: 12px;
+}
+
+
+.resetBtn:hover {
+    background-color: var(--light-grayish-cyan);
+}
+
+
