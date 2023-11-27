@@ -16,8 +16,8 @@
 
 ### Screenshot
 
-![](./src/assets/dekstop.png)
-![](./src/assets/mobile.png)
+![](./src/assets/dekstop-version.png)
+![](./src/assets/mobile-version.png)
 
 ### Links
 

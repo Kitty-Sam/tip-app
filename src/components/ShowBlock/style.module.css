@@ -24,3 +24,9 @@
     justify-content: space-between;
     margin-top: 20px
 }
+
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+}

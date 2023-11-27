@@ -32,9 +32,8 @@ export const InputBlock: FC<IInputBlock> = ({
         value={tip.value}
       />
     ) : (
-      <>
+      <div key={el}>
         <TipButton
-          key={el}
           title={el}
           onClick={handleSelectTip(el)}
           style={{
@@ -49,7 +48,7 @@ export const InputBlock: FC<IInputBlock> = ({
                 : "var(--very-dark-cyan)",
           }}
         />
-      </>
+      </div>
     ),
   );
 
@@ -77,6 +76,7 @@ export const InputBlock: FC<IInputBlock> = ({
           icon="avatar"
           onChange={peopleCount.handleChange}
           value={peopleCount.value}
+          error={peopleCount.error}
         />
         <Text text={peopleCount.error} color="var(--error)" />
       </>
