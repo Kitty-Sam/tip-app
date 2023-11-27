@@ -6,13 +6,11 @@
 }
 
 .dollarIcon {
-    background: var(--very-light-grayish-cyan) url(src/assets/dollar-sign.svg) no-repeat;
-    background-size: 20px 20px;
+    background: var(--very-light-grayish-cyan) url(src/assets/icon-dollar.svg) no-repeat;
     background-position: left 10px center;
 }
 
 .avatarIcon {
-    background: var(--very-light-grayish-cyan) url(src/assets/avatar.svg) no-repeat;
-    background-size: 30px 30px;
+    background: var(--very-light-grayish-cyan) url(src/assets/icon-person.svg) no-repeat;
     background-position:left 10px center;
 }
