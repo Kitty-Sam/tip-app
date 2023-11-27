@@ -38,10 +38,10 @@ export const MainScreen = () => {
     if (selectedTip && bill.value && peopleCount.value) {
       return (
         "$" +
-        Math.round(
+        (
           (Number(bill.value) * Number(selectedTip.slice(0, -1))) /
-            100 /
-            Number(peopleCount.value),
+          100 /
+          Number(peopleCount.value)
         ).toFixed(2)
       );
     } else {
@@ -50,10 +50,7 @@ export const MainScreen = () => {
   };
 
   const handleTotalPerPerson = () => {
-    return (
-      "$" +
-      Math.round(Number(bill.value) / Number(peopleCount.value)).toFixed(2)
-    );
+    return "$" + (Number(bill.value) / Number(peopleCount.value)).toFixed(2);
   };
 
   return (

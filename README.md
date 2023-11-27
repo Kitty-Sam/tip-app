@@ -16,12 +16,13 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./src/assets/dekstop.png)
+![](./src/assets/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kitty-Sam/tip-app
+- Live Site URL: https://samuta-tip-app.netlify.app/
 
 ## My process
 
@@ -35,6 +36,6 @@
 
 ## Author
 
-- Website - [Katerina Samuta](https://www.your-site.com)
+- Website - [Katerina Samuta](https://samuta-tip-app.netlify.app/)
 
 
