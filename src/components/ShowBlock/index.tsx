@@ -35,11 +35,35 @@ export const ShowBlock: FC<IShowBlock> = ({
   return (
     <div className={styles.showBlock}>
       <div className={styles.result}>
-        <Text text="Tip Amount/person" color="var(--white)" />
+        <div className={styles.textBlock}>
+          <Text
+            text="Tip Amount/"
+            color="var(--white)"
+            style={{ margin: "0" }}
+            fontSize={18}
+          />
+          <Text
+            text="person"
+            color="var(--grayish-cyan)"
+            style={{ margin: "0" }}
+          />
+        </div>
         <Text text={tipPerPerson} color="var(--strong-cyan)" fontSize={56} />
       </div>
       <div className={styles.result}>
-        <Text text="Total/person" color="var(--white)" />
+        <div className={styles.textBlock}>
+          <Text
+            text="Total/"
+            color="var(--white)"
+            style={{ margin: "0" }}
+            fontSize={18}
+          />
+          <Text
+            text="person"
+            color="var(--grayish-cyan)"
+            style={{ margin: "0" }}
+          />
+        </div>
         <Text text={totalPerPerson} color="var(--strong-cyan)" fontSize={56} />
       </div>
       <ResetButton onClick={handleReset} title="reset" />

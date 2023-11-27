@@ -7,13 +7,26 @@ export interface IResultedValue {
   error: string;
   resetError: () => void;
 }
-export const useInput = (initValue: string): IResultedValue => {
+export const useInput = (
+  initValue: string,
+  inputType = "default",
+): IResultedValue => {
   const [value, setValue] = useState<string>(initValue);
   const [error, setError] = useState<string>("");
+
+  const isInteger = (number: number) => {
+    return number % 1 === 0;
+  };
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     resetError();
 
+    if (inputType === "integer") {
+      if (!isInteger(Number(event.target.value))) {
+        setError("Use only integer numbers");
+        return;
+      }
+    }
     if (isNaN(Number(event.target.value))) {
       setError("Use only positive numbers");
       return;

@@ -9,7 +9,7 @@ export const MainScreen = () => {
 
   const bill = useInput("");
   const tip = useInput("");
-  const peopleCount = useInput("");
+  const peopleCount = useInput("", "integer");
 
   const handleSelectTip = (tipValue: string) => () => {
     tip.reset();
